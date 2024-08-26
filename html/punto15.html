@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Ingrese su descripción aquí" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|fire-animation|3d|3d-float"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bienvenidos</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="jumbotron jumbotron-fluid bg-dark text-white">
+        <div class="container p-3 my-3 bd-dark">
+            <h1 class="text-center font-effect-3d-float"><b>Ejercicio 15</b></h1>
+            <h2 class="text-center font-effect-3d-float" style="padding:50px;">Comprobante de Venta</h2>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center text-primary">Solicitud de datos</h2>
+        <form action="../WEB-IN/resultadopunto15.jsp" method="post">
+            <div class="form-group">
+                <label for="nombre" class="text-info">Nombres:</label>
+                <input id="nombre" type="text" name="nombre" class="form-control bg-light border-info" size="10">
+            </div>
+            
+            <div class="form-group">
+                <label for="apellido" class="text-info">Apellidos:</label>
+                <input id="apellido" type="text" name="apellido" class="form-control bg-light border-info" size="10">
+            </div>
+    
+            <fieldset class="form-group">
+                <legend class="text-secondary">Género:</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="generoMasculino" value="Masculino">
+                    <label class="form-check-label text-secondary" for="generoMasculino">Masculino</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="generoFemenino" value="Femenino">
+                    <label class="form-check-label text-secondary" for="generoFemenino">Femenino</label>
+                </div>
+            </fieldset>
+    
+            <fieldset class="form-group">
+                <legend class="text-secondary">Tipo de producto a comprar:</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="prod" id="prodHardware" value="Hardware">
+                    <label class="form-check-label text-secondary" for="prodHardware">Hardware</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="prod" id="prodSoftware" value="Software">
+                    <label class="form-check-label text-secondary" for="prodSoftware">Software</label>
+                </div>
+            </fieldset>
+    
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>PRODUCTO</th>
+                            <th>CANTIDAD</th>
+                            <th>PRECIO UNIT $:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select name="pdto1" class="form-control">
+                                    <option value="monitor">Monitor</option>
+                                    <option value="lectora">Lectora DVD</option>
+                                    <option value="impresora">Impresora</option>
+                                    <option value="mouse">Mouse</option>
+                                    <option value="teclado">Teclado</option>
+                                    <option value="discoduro">Disco Duro</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="cant1" class="form-control" size="10"></td>
+                            <td><input type="text" name="pu1" class="form-control" size="10"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="pdto2" class="form-control">
+                                    <option value="monitor">Monitor</option>
+                                    <option value="lectora">Lectora DVD</option>
+                                    <option value="impresora">Impresora</option>
+                                    <option value="mouse">Mouse</option>
+                                    <option value="teclado">Teclado</option>
+                                    <option value="discoduro">Disco Duro</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="cant2" class="form-control" size="10"></td>
+                            <td><input type="text" name="pu2" class="form-control" size="10"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="pdto3" class="form-control">
+                                    <option value="monitor">Monitor</option>
+                                    <option value="lectora">Lectora DVD</option>
+                                    <option value="impresora">Impresora</option>
+                                    <option value="mouse">Mouse</option>
+                                    <option value="teclado">Teclado</option>
+                                    <option value="discoduro">Disco Duro</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="cant3" class="form-control" size="10"></td>
+                            <td><input type="text" name="pu3" class="form-control" size="10"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="pdto4" class="form-control">
+                                    <option value="monitor">Monitor</option>
+                                    <option value="lectora">Lectora DVD</option>
+                                    <option value="impresora">Impresora</option>
+                                    <option value="mouse">Mouse</option>
+                                    <option value="teclado">Teclado</option>
+                                    <option value="discoduro">Disco Duro</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="cant4" class="form-control" size="10"></td>
+                            <td><input type="text" name="pu4" class="form-control" size="10"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="pdto5" class="form-control">
+                                    <option value="monitor">Monitor</option>
+                                    <option value="lectora">Lectora DVD</option>
+                                    <option value="impresora">Impresora</option>
+                                    <option value="mouse">Mouse</option>
+                                    <option value="teclado">Teclado</option>
+                                    <option value="discoduro">Disco Duro</option>
+                                </select>
+                            </td>
+                            <td><input type="text" name="cant5" class="form-control" size="10"></td>
+                            <td><input type="text" name="pu5" class="form-control" size="10"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <fieldset class="form-group">
+                <legend class="text-secondary">Tipo de comprobante de pago:</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pago" id="boleta" value="boleta">
+                    <label class="form-check-label text-secondary" for="boleta">Boleta</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pago" id="factura" value="factura">
+                    <label class="form-check-label text-secondary" for="factura">Factura</label>
+                </div>
+            </fieldset>
+    
+            <div class="form-group">
+                <label for="men" class="text-info">Observaciones:</label>
+                <textarea id="men" name="men" class="form-control" rows="4"></textarea>
+            </div>
+    
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div class="text-center mt-4 mb-3">
+        <a href="../prueba.html" class="btn btn-dark">Volver al menu principal</a>
+    </div>
+
+    <!----------------------------------------------------------FOOTER-------------------------------------------------------->
+ <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Acerca de Nosotros</h5>
+                <p>Estudiante de las Unidades Tecnologicas de Santander</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white"></a></li>
+                    <li><a href="#" class="text-white"></a></li>
+                    <li><a href="#" class="text-white"></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <p>Email: ejemplo@ejemplo.com</p>
+                <p>Teléfono: +57 123456789</p>
+            </div>
+        </div>
+        <div class="mt-4">
+            <p><svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20">
+                    <path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z" />
+                    <path
+                        d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z" />
+                </svg>
+                &copy; Cristofer Munoz Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+</body>
+
+</html>
